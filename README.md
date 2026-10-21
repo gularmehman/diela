@@ -17,7 +17,6 @@ Open http://localhost:8000.
 
 - `src/` — editable HTML, CSS, JavaScript, app interface excerpts, and original artwork.
 - `dist/` — ready-to-serve website, including local images, fonts, and font licenses.
-- `design/` — implementation notes and design reference previews.
 - `.openai/hosting.json` — existing ChatGPT Sites configuration.
 
 The main build inputs are `src/diela-editorial.html`, `src/editorial.css`, `src/dawn.css`, `src/editorial.js`, and selected fragments in `src/native/`. Rebuild after editing them.
@@ -26,4 +25,4 @@ The main build inputs are `src/diela-editorial.html`, `src/editorial.css`, `src/
 
 Serve `dist/` as the static website directory. The current testing-list links point to the original Diela Site's registration form; review that destination before hosting under a new domain. The exported site retains its existing noindex setting.
 
-This repository contains the website, not the full Diela application or registration backend. Runtime data, credentials, and visitor submissions are not included. See `design/README.md` for implementation history and verification limits.
+This repository contains the website, not the full Diela application or registration backend. Runtime data, credentials, and visitor submissions are not included. The Python build and JavaScript syntax were checked during export; this is not a new browser or accessibility audit.
